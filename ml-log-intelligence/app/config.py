@@ -5,16 +5,12 @@ from pydantic_settings import BaseSettings
 
 
 class Settings(BaseSettings):
-    # Database
     db_url: str
 
-    # ML model
     model_path: str
 
-    # Alerts
     alert_webhook: str
 
-    # App settings
     env: str = "development"
     log_level: str = "info"
 
